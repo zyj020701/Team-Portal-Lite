@@ -17,7 +17,8 @@
     "test:coverage": "turbo run test:coverage",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "test:smoke": "playwright test e2e/smoke.spec.ts"
+    "test:smoke": "playwright test e2e/smoke.spec.ts",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
@@ -35,6 +36,7 @@
     "@vitest/coverage-v8": "^2.0.0",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-import": "^2.29.0",
     "husky": "^9.0.0",
     "jsdom": "^25.0.0",
