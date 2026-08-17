@@ -13,12 +13,12 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
-    projects: [
-      {
-        name: 'chromium',
-        use: { ...devices['Desktop Chrome'], channel: 'chromium' },
-      },
-    ],
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+  ],
   webServer: {
     command: 'pnpm --filter @team-portal-lite/web dev',
     url: 'http://localhost:3000',
