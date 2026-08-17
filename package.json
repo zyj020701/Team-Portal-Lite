@@ -20,6 +20,15 @@
     "test:smoke": "playwright test e2e/smoke.spec.ts",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{js,json,md,css}": [
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
     "@commitlint/cli": "^19.0.0",
