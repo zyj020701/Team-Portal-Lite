@@ -4,7 +4,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['@team-portal-lite/ui', '@team-portal-lite/lib', '@team-portal-lite/features'],
+  transpilePackages: [
+    '@team-portal-lite/ui',
+    '@team-portal-lite/lib',
+    '@team-portal-lite/features',
+    '@team-portal-lite/store',
+  ],
   images: {
     // 允许的远程图片域名（CDN）
     remotePatterns: [
