@@ -149,14 +149,14 @@ jobs:
         run: pnpm --filter @team-portal-lite/web build
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli
+        run: npm install -g @lhci/cli wait-on
 
       - name: Run Lighthouse CI
         run: |
           pnpm --filter @team-portal-lite/web start --port 3000 &
           SERVER_PID=$!
           echo "Waiting for server to start..."
-          npx wait-on http://localhost:3000 -t 60000
+          wait-on http://localhost:3000 -t 60000
           lhci autorun --config=./lighthouse-budget.json
           EXIT_CODE=$?
           kill $SERVER_PID 2>/dev/null || true
