@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -29,28 +25,13 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@team-portal/ui": [
-        "../../packages/ui/src"
-      ],
-      "@team-portal/lib": [
-        "../../packages/lib/src"
-      ],
-      "@team-portal/features": [
-        "../../packages/features/src"
-      ]
+      "@/*": ["./src/*"],
+      "@team-portal/ui": ["../../packages/ui/src"],
+      "@team-portal/lib": ["../../packages/lib/src"],
+      "@team-portal/features": ["../../packages/features/src"]
     },
-    "noEmit": true
+    "emitDeclarationOnly": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
