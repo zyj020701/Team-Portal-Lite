@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@team-portal-lite/ui": ["packages/ui/src"],
+      "@team-portal-lite/lib": ["packages/lib/src"],
+      "@team-portal-lite/features": ["packages/features/src"],
+      "@team-portal-lite/store": ["packages/store/src"]
+    }
+  },
+  "files": [],
+  "references": [
+    { "path": "./apps/web" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/lib" },
+    { "path": "./packages/features" },
+    { "path": "./packages/store" }
+  ]
+}

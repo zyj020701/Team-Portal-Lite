@@ -1,0 +1,28 @@
+{
+  "performance_score": 99,
+  "lcp": {
+    "value": 2145.6699,
+    "score": 0.95,
+    "displayValue": "2.1 s"
+  },
+  "fcp": {
+    "value": 793.6699000000001,
+    "score": 1,
+    "displayValue": "0.8 s"
+  },
+  "tbt": {
+    "value": 62.99999999999977,
+    "score": 1,
+    "displayValue": "60 ms"
+  },
+  "cls": {
+    "value": 0.007174633506357286,
+    "score": 1,
+    "displayValue": "0.007"
+  },
+  "si": {
+    "value": 891.4445939784291,
+    "score": 1,
+    "displayValue": "0.9 s"
+  }
+}
